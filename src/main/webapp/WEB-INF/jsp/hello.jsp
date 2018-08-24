@@ -13,7 +13,7 @@
 <p>Hello, SpringBoot on Wildfly!</p>
 <p>appName(spring.application.name) JSTL : <c:out value="${appName}" /></p>
 <p>appName(spring.application.name) el: ${appName}  </p>
-<p><strong>Changelog:</strong></p>
+<p><strong>Changelog: (probably too verbose, destined to me, check CHANGELOG.md on my github)</strong></p>
 <ul>
 <li>Webhook trigger configured</li>
 <li>Updated Spring Boot version to 2.0.3.RELEASE</li>
@@ -24,6 +24,7 @@
 <li>JSP is served correctly now!</li>
 <li>Adding JSTL support </li>
 <li>EL Also supported  </li>
+<li>Changed remote repo name  </li>
 
 
 
