@@ -1,13 +1,14 @@
 package bootwildfly;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class HelloWildFlyController {
 
-	@RequestMapping("hello")
+	@RequestMapping("/")
 	public String sayHello() {
-		return ("Hello, SpringBoot on Wildfly - web hook trigger test OK");
+
+		return "hello";
 	}
 }
