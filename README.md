@@ -6,3 +6,5 @@ As an added bonus, this repo can also be deployed directly as a docker container
 
 
 What, you don't have OpenShift 3 yet? Fix that immediately: www.openshift.org/vm
+
+Check CHANGELOG.md for details
