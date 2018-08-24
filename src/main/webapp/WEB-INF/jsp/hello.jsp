@@ -26,6 +26,8 @@
 <li>EL Also supported  </li>
 <li>Changed remote repo name</li>
 <li>Added Spring Security (no config test)</li>
+<li>Added Spring Security Config (Disabling it for now)</li>
+
 
 
 
