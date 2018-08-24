@@ -8,6 +8,6 @@ public class HelloWildFlyController {
 
 	@RequestMapping("hello")
 	public String sayHello() {
-		return ("Hello, SpringBoot on Wildfly - web hook trigger test 2");
+		return ("Hello, SpringBoot on Wildfly - web hook trigger test OK");
 	}
 }
