@@ -24,7 +24,8 @@
 <li>JSP is served correctly now!</li>
 <li>Adding JSTL support </li>
 <li>EL Also supported  </li>
-<li>Changed remote repo name  </li>
+<li>Changed remote repo name</li>
+<li>Added Spring Security (no config test)</li>
 
 
 
