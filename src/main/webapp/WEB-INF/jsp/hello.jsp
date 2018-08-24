@@ -11,13 +11,8 @@
 
 
 <p>Hello, SpringBoot on Wildfly!</p>
-<<<<<<< HEAD
 <p>appName(spring.application.name) JSTL : <c:out value="${appName}" /></p>
-=======
-<p>appName(spring.application.name) JSTL : <c:out value="appName" /></p>
->>>>>>> refs/remotes/origin/master
 <p>appName(spring.application.name) el: ${appName}  </p>
-
 <p><strong>Changelog:</strong></p>
 <ul>
 <li>Webhook trigger configured</li>
@@ -28,10 +23,8 @@
 <li>moving jsps into WEB-INF and updating properties with suffix/prefix for jsp ressources to be found</li>
 <li>JSP is served correctly now!</li>
 <li>Adding JSTL support </li>
-<<<<<<< HEAD
 <li>EL Also supported  </li>
-=======
->>>>>>> refs/remotes/origin/master
+
 
 
 </ul>
