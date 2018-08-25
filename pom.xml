@@ -46,7 +46,6 @@
 		<dependency>
     		<groupId>javax.servlet</groupId>
     		<artifactId>jstl</artifactId>
-    		<version>1.2</version>
 	</dependency>
 
 	<dependency>
@@ -60,10 +59,10 @@
 			<optional>true</optional>
 	</dependency>
 
-		<dependency>
+	<dependency>
 			<groupId>com.vaadin</groupId>
 			<artifactId>vaadin-spring-boot-starter</artifactId>
-		</dependency>
+	</dependency>
 
 	</dependencies>
 
