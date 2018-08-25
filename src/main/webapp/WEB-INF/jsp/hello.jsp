@@ -27,7 +27,8 @@
 <li>Changed remote repo name</li>
 <li>Added Spring Security (no config test)</li>
 <li>Added Spring Security Config (Disabling it for now)</li>
-<li>Project reset, webhook test again</li>
+<li>Project reset, webhook test 2</li>
+<li>Project reset, webhook test 3</li>
 
 
 
