@@ -34,7 +34,7 @@
 <li>Added vaadin</li>
 <li>Maven War Plugin to 3.1.0</li>
 <li>restored Vaadin in POM, Removed web.suffix/preffix from application.properties</li>
-
+<li>Need to work on Vaadin Integration</li>
 
 
 
