@@ -29,6 +29,9 @@
 <li>Added Spring Security Config (Disabling it for now)</li>
 <li>Project reset, webhook test 2</li>
 <li>Project reset, webhook test 3</li>
+<li>Added h2</li>
+<li>Added lombok</li>
+<li>Added vaadin</li>
 
 
 

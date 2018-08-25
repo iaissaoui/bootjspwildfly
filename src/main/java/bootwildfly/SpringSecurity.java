@@ -12,9 +12,9 @@ public class SpringSecurity extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 
-		// http.authorizeRequests().anyRequest().permitAll().and().csrf().disable();
+		http.authorizeRequests().anyRequest().permitAll().and().csrf().disable();
 		// h2 console blank page issue
-		// http.headers().frameOptions().disable();
+		http.headers().frameOptions().disable();
 		// alternatively "http.headers().frameOptions().sameOrigin();"
 	}
 

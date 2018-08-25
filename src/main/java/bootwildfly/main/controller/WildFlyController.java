@@ -1,4 +1,4 @@
-package bootwildfly.main;
+package bootwildfly.main.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -6,15 +6,15 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class HelloWildFlyController {
+public class WildFlyController {
 
 	@Value("${spring.application.name}")
 	private String appName;
 
-	@GetMapping("/")
+	@GetMapping("/changelog")
 	public String sayHello(Model m) {
 
 		m.addAttribute("appName", appName);
-		return "hello";
+		return "changelog";
 	}
 }
