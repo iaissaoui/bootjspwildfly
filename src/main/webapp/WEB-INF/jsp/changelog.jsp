@@ -36,12 +36,17 @@
 <li>Need to work on Vaadin Integration</li>
 <li>Added home page on root</li>
 <li>Explore OpenShft's persistent storage</li>
+<li>Files persisted correctly to /dsk0/</li>
+<li>testing persistent volumes & H2 disk-based</li>
 
 
+current:
+<li>testing persistent volumes & H2 disk-based</li>
+<li>add jpa, an entity and persist it through apps deployments with disk based h2</li>
 
+next:
+<li>persist spring logs to files in storage /dsk0/</li>
 
-<li>getting Vaadin 10 to play nice with spring... 0</li>
-<li>get spring logging info</li>
 
 
 </ul>
