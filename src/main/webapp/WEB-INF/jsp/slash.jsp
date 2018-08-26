@@ -11,6 +11,6 @@
 <h1>You landed on the root!</h1>
 <h2>You can try /changelog</h2>
 <h2>appName: ${appName}</h2>
-<h2>firstLine: ${firstLine}</h2>
+<h2>firstLine (second test): ${firstLine}</h2>
 </body>
 </html>

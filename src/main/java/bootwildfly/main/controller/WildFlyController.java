@@ -1,14 +1,10 @@
 package bootwildfly.main.controller;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.OutputStreamWriter;
-import java.io.Writer;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -34,16 +30,16 @@ public class WildFlyController {
 
 		String firstline = "";
 
-		try {
-			File f = new File("/dsk0/file.txt");
-			FileOutputStream is = new FileOutputStream(f);
-			OutputStreamWriter osw = new OutputStreamWriter(is);
-			Writer w = new BufferedWriter(osw);
-			w.write("Hello World!");
-			w.close();
-		} catch (IOException e) {
-			System.err.println("Problem writing to the file statsTest.txt");
-		}
+//		try {
+//			File f = new File("/dsk0/file.txt");
+//			FileOutputStream is = new FileOutputStream(f);
+//			OutputStreamWriter osw = new OutputStreamWriter(is);
+//			Writer w = new BufferedWriter(osw);
+//			w.write("Hello World!");
+//			w.close();
+//		} catch (IOException e) {
+//			System.err.println("Problem writing to the file statsTest.txt");
+//		}
 
 		try {
 
