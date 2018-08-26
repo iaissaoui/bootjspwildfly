@@ -5,10 +5,12 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>${appName} }</title>
+<title>${appName} </title>
 </head>
 <body>
 <h1>You landed on the root!</h1>
 <h2>You can try /changelog</h2>
+<h2>appName: ${appName}</h2>
+<h2>firstLine: ${firstLine}</h2>
 </body>
 </html>

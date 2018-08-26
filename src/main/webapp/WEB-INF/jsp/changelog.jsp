@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
@@ -35,7 +34,14 @@
 <li>Maven War Plugin to 3.1.0</li>
 <li>restored Vaadin in POM, Removed web.suffix/preffix from application.properties</li>
 <li>Need to work on Vaadin Integration</li>
+<li>Added home page on root</li>
+<li>Explore OpenShft's persistent storage</li>
 
+
+
+
+<li>getting Vaadin 10 to play nice with spring... 0</li>
+<li>get spring logging info</li>
 
 
 </ul>
