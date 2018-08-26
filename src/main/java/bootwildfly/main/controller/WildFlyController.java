@@ -30,17 +30,6 @@ public class WildFlyController {
 
 		String firstline = "";
 
-//		try {
-//			File f = new File("/dsk0/file.txt");
-//			FileOutputStream is = new FileOutputStream(f);
-//			OutputStreamWriter osw = new OutputStreamWriter(is);
-//			Writer w = new BufferedWriter(osw);
-//			w.write("Hello World!");
-//			w.close();
-//		} catch (IOException e) {
-//			System.err.println("Problem writing to the file statsTest.txt");
-//		}
-
 		try {
 
 			File f = new File("/dsk0/file.txt");
