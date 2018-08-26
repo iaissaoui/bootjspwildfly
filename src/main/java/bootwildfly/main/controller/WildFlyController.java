@@ -12,9 +12,17 @@ public class WildFlyController {
 	private String appName;
 
 	@GetMapping("/changelog")
-	public String sayHello(Model m) {
+	public String changelog(Model m) {
 
 		m.addAttribute("appName", appName);
 		return "changelog";
 	}
+
+	@GetMapping("/")
+	public String home(Model m) {
+
+		m.addAttribute("appName", appName);
+		return "slash";
+	}
+
 }
