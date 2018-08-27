@@ -6,8 +6,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
-//@EnableJpaRepositories("bootwildfly.main.repo")
-//@EntityScan("bootwildfly.main.model")
 @EnableAutoConfiguration
 @SpringBootApplication
 public class Application extends SpringBootServletInitializer {
@@ -20,18 +18,4 @@ public class Application extends SpringBootServletInitializer {
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
 		return application.sources(Application.class);
 	}
-
-//	@Bean
-//	public CommandLineRunner loadData(UserRepository ur) {
-//		return (args) -> {
-//
-//			repository.save(new User("Jack", "Bauer"));
-//			repository.save(new User("Chloe", "O'Brian"));
-//			repository.save(new User("Kim", "Bauer"));
-//			repository.save(new User("David", "Palmer"));
-//			repository.save(new User("Michelle", "Dessler"));
-//
-//		};
-//	}
-
 }
