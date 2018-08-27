@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
  <!DOCTYPE html>
 <html>
 <head>
@@ -41,8 +42,8 @@
 
 
 current:
-<li>testing persistent volumes & H2 disk-based</li>
-<li>add jpa, an entity and persist it through apps deployments with disk based h2</li>
+<li>prepare jpa</li>
+<li>persist logs to persistent storage check</li>
 
 next:
 <li>persist spring logs to files in storage /dsk0/</li>

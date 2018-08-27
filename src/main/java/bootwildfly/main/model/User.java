@@ -1,7 +1,9 @@
 package bootwildfly.main.model;
 
+import lombok.Data;
+
 //@Entity
-public class User {
+public @Data class User {
 
 //	@Id
 //	@GeneratedValue(strategy = GenerationType.AUTO)
