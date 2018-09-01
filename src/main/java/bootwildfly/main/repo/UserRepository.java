@@ -1,9 +1,15 @@
 package bootwildfly.main.repo;
 
-public interface UserRepository
-//extends JpaRepository<User, Long>
-{
+import java.util.List;
 
-//	List<User> findByLnStartsWithIgnoreCase(String ln);
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import bootwildfly.main.model.User;
+
+@Repository
+public interface UserRepository extends JpaRepository<User, Long> {
+
+	List<User> findByLnStartsWithIgnoreCase(String ln);
 
 }

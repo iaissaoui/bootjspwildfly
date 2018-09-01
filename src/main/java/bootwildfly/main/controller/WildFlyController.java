@@ -5,14 +5,22 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import bootwildfly.main.model.User;
+import bootwildfly.main.repo.UserRepository;
+
 @Controller
 public class WildFlyController {
+
+	@Autowired
+	UserRepository ur;
 
 	@Value("${spring.application.name}")
 	private String appName;
@@ -55,6 +63,14 @@ public class WildFlyController {
 		}
 
 		m.addAttribute("firstLine", firstline);
+
+		ur.save(new User(0L, "fn0", "ln0"));
+		ur.save(new User(1L, "fn1", "ln1"));
+		ur.save(new User(2L, "fn2", "ln2"));
+
+		List<User> lusr = ur.findByLnStartsWithIgnoreCase("l");
+
+		m.addAttribute("User1", lusr.get(0).getLn());
 
 		return "slash";
 	}
