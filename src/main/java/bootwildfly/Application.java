@@ -10,7 +10,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @EnableAutoConfiguration
 @EnableJpaRepositories("bootwildfly.main.repo")
-@ComponentScan("")
+@ComponentScan("bootwildfly.main.model")
 @SpringBootApplication
 public class Application extends SpringBootServletInitializer {
 
