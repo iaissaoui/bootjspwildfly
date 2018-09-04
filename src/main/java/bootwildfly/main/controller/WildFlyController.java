@@ -35,35 +35,7 @@ public class WildFlyController {
 	@GetMapping("/")
 	public String home(Model m) {
 		m.addAttribute("appName", appName);
-
-		String firstline = "";
-
-		try {
-
-			File f = new File("/dsk0/file.txt");
-			BufferedReader br = new BufferedReader(new FileReader(f));
-			String line;
-
-			int i = 0;
-
-			while ((line = br.readLine()) != null) {
-				if (i == 0) {
-					firstline = line;
-				}
-				System.out.println(line);
-				i++;
-			}
-			br.close();
-		} catch (FileNotFoundException e) {
-			// File not found
-			e.printStackTrace();
-		} catch (IOException e) {
-			// Error when reading the file
-			e.printStackTrace();
-		}
-
-		m.addAttribute("firstLine", firstline);
-
+ 
 		ur.save(new User(0L, "fn0", "ln0"));
 		ur.save(new User(1L, "fn1", "ln1"));
 		ur.save(new User(2L, "fn2", "ln2"));
