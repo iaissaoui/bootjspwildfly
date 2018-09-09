@@ -92,25 +92,25 @@
 
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
-                    <outputDirectory>target</outputDirectory>
-              		  <warName>ROOT</warName>
-                </configuration>
-			</plugin>
 <!-- 			<plugin> -->
-<!--                 <groupId>org.apache.maven.plugins</groupId> -->
-<!--                 <artifactId>maven-war-plugin</artifactId> -->
-
-<!--                 <configuration> -->
+<!-- 				<groupId>org.springframework.boot</groupId> -->
+<!-- 				<artifactId>spring-boot-maven-plugin</artifactId> -->
+<!-- 				<configuration> -->
 <!--                     <failOnMissingWebXml>false</failOnMissingWebXml> -->
 <!--                     <outputDirectory>target</outputDirectory> -->
 <!--               		  <warName>ROOT</warName> -->
 <!--                 </configuration> -->
-<!--             </plugin> -->
+<!-- 			</plugin> -->
+			<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                    <outputDirectory>target</outputDirectory>
+              		  <warName>ROOT</warName>
+                </configuration>
+            </plugin>
 		</plugins>
 	</build>
 
