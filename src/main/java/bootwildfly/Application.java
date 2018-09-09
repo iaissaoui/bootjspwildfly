@@ -12,7 +12,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
  
-@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
+@SpringBootApplication
 @EnableJpaRepositories("bootwildfly.main.repo")
 @ComponentScan("bootwildfly.main.model")
 public class Application extends SpringBootServletInitializer {
