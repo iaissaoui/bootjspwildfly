@@ -8,8 +8,10 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerA
 import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.jmx.export.MBeanExporter;
 
  
 @SpringBootApplication
@@ -24,6 +26,15 @@ public class Application extends SpringBootServletInitializer {
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
 		return application.sources(Application.class);
+	}
+	
+	@Bean
+	public MBeanExporter exporter()
+	{
+	    final MBeanExporter exporter = new MBeanExporter();
+	    exporter.setAutodetect(true); 
+	    exporter.setExcludedBeans("dataSource");
+	    return exporter;
 	}
 	
 	
