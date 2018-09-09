@@ -28,14 +28,14 @@ public class Application extends SpringBootServletInitializer {
 		return application.sources(Application.class);
 	}
 	
-	@Bean
-	public MBeanExporter exporter()
-	{
-	    final MBeanExporter exporter = new MBeanExporter();
-	    exporter.setAutodetect(true); 
-	    exporter.setExcludedBeans("dataSource");
-	    return exporter;
-	}
+//	@Bean
+//	public MBeanExporter exporter()
+//	{
+//	    final MBeanExporter exporter = new MBeanExporter();
+//	    exporter.setAutodetect(true); 
+//	    exporter.setExcludedBeans("dataSource");
+//	    return exporter;
+//	}
 	
 	
 }
