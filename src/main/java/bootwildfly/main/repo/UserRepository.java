@@ -5,11 +5,12 @@ import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import bootwildfly.main.model.User;
+import bootwildfly.main.model.AppUser;
 
 @Repository
-public interface UserRepository extends JpaRepository<User, Long> {
+public interface UserRepository extends JpaRepository<AppUser, Long> {
 
-	List<User> findByLnStartsWithIgnoreCase(String ln);
+	List<AppUser> findByLnStartsWithIgnoreCase(String ln); 
 
 }
+ 
