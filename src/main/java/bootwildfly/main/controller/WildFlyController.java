@@ -36,13 +36,13 @@ public class WildFlyController {
 	public String home(Model m) {
 		m.addAttribute("appName", appName);
  
-		ur.save(new AppUser(0L, "fn0", "ln0"));
-		ur.save(new AppUser(1L, "fn1", "ln1")); 
-		ur.save(new AppUser(2L, "fn2", "ln2"));
- 
-		List<AppUser> lusr = ur.findByLnStartsWithIgnoreCase("l");
-
-		m.addAttribute("User1", lusr.get(0).getLn());
+//		ur.save(new AppUser(0L, "fn0", "ln0"));
+//		ur.save(new AppUser(1L, "fn1", "ln1")); 
+//		ur.save(new AppUser(2L, "fn2", "ln2"));
+// 
+//		List<AppUser> lusr = ur.findByLnStartsWithIgnoreCase("l");
+//
+//		m.addAttribute("User1", lusr.get(0).getLn());
 
 		return "slash";
 	}
